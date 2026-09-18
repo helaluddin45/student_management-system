@@ -8,3 +8,11 @@ class Student:
 
 student1 = Student("Saida", 101)
 print(student1.display_info())
+def calculate_average(marks):
+    if len(marks) == 0:
+        return 0
+    return sum(marks) / len(marks)
+
+marks_list = [85, 90, 78, 92]
+average = calculate_average(marks_list)
+print(f"Average Marks: {average}")
